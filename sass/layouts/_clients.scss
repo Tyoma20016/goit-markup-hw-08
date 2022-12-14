@@ -1,0 +1,44 @@
+.client-top{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    min-width: 100%;
+
+    & .client-link{
+     display: block;
+    padding: 16px 32px;
+    height: 92px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    color: #AFB1B8;
+    transition:  border var(--animation), color var(--animation);
+    }
+}
+
+.client-item{
+   
+    @media screen and (min-width: 480px) {
+        width: calc((100% - 30px) / 2);
+    }
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 60px) / 3);
+    }
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 150px) / 6);
+    }
+}
+
+.client-icon{
+    fill: currentColor;
+}
+.client-link{
+   &:hover,
+   &:focus{
+    color:var(--color-darkBlue);
+    border: 1px solid var(--color-darkBlue);
+   }
+}
