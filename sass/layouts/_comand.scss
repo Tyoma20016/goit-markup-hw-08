@@ -18,8 +18,8 @@
     margin-bottom: 30px;
 
     font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
+    font-size: 28px;
+    line-height: 1.17;
     color: var(--color-HexachromeBlack);
     text-align: center;
     letter-spacing: 0.03em;
@@ -27,6 +27,8 @@
     @media screen and (min-width: 1200px) {
         margin-top: 0;
         margin-bottom: 50px;
+        font-size: 36px;
+        line-height: 1.16;
     }
 
 }         
